@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+          href="css/page.css" />
+    <link rel="shortcut icon"
+          href="icons/favicon.ico"
+          type="image/x-icon" />
+    <title>Home</title>
+  </head>
+
+  <body>
+    <div class="container-md card card-body">
+      <div class="display-6 d-flex justify-content-between">
+        <div>
+          <button class="btn btn-primary"
+                  title="toogle preview"
+                  id="preview-btn"
+                  data-eye="closed">
+            <svg width="20"
+                 height="20"
+                 fill="currentColor"
+                 class="bi bi-eye-slash"
+                 viewBox="0 0 16 16">
+              <path
+                    d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7.028 7.028 0 0 0-2.79.588l.77.771A5.944 5.944 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.134 13.134 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755-.165.165-.337.328-.517.486l.708.709z" />
+              <path
+                    d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829l.822.822zm-2.943 1.299.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829z" />
+              <path
+                    d="M3.35 5.47c-.18.16-.353.322-.518.487A13.134 13.134 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7.029 7.029 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296 8.884-12-12 .708-.708 12 12-.708.708z" />
+            </svg>
+          </button> Hello
+        </div>
+        <button class="btn btn-success"
+                id="upload-btn"
+                title="upload files">
+          <svg width="20"
+               height="20"
+               fill="currentColor"
+               class="bi bi-cloud-upload"
+               viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                  d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z" />
+            <path fill-rule="evenodd"
+                  d="M7.646 4.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V14.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3z" />
+          </svg>
+        </button>
+      </div>
+      <div class="row table-view-page">
+        <div id="preview-container"
+             class="col-md-4 hide-element"></div>
+        <div class="col-md"
+             id="table-view-container">
+          <div class="btn-container">
+            <div class="left-side-btns">
+              <button class="btn btn-success"
+                      id="download-multiple-files-btn"
+                      title="download all selected file">
+                <svg width="20"
+                     height="20"
+                     fill="currentColor"
+                     class="bi bi-download"
+                     viewBox="0 0 16 16">
+                  <path
+                        d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                  <path
+                        d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                </svg> &MediumSpace;selected </button>
+            </div>
+            <div class="right-side-btns">
+              <button class="btn btn-primary"
+                      id="back-btn"
+                      title="load previous page">
+                <svg width="20"
+                     height="20"
+                     fill="currentColor"
+                     class="bi bi-arrow-left"
+                     viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                        d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                </svg>
+              </button>
+              <button class="btn btn-primary"
+                      id="home-btn"
+                      title="go to home">
+                <svg width="20"
+                     height="20"
+                     fill="currentColor"
+                     class="bi bi-house"
+                     viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                        d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                  <path fill-rule="evenodd"
+                        d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                </svg>
+              </button>
+              <button class="btn btn-primary"
+                      id="reload-btn"
+                      title="reload folder">
+                <svg width="20"
+                     height="20"
+                     fill="currentColor"
+                     class="bi bi-arrow-clockwise"
+                     viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                        d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z" />
+                  <path
+                        d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="table-container">
+            <table class="table">
+              <thead class="table-dark sticky-top">
+                <tr>
+                  <th>#</th>
+                  <th>
+                    <label>NAME</label>
+                    <div class="form-check">
+                      <input type="checkbox"
+                             class="form-check-input"
+                             id="select-all-btn" />
+                      <label for="select-all-btn"
+                             class="form-check-label">select all</label>
+                    </div>
+                  </th>
+                  <th>Info</th>
+                </tr>
+              </thead>
+              <tbody id="table-body"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="upload-file-page hide-element">
+        <form class="mb-3"
+              id="file-upload-form">
+          <div class="input-group">
+            <input class="form-control"
+                   type="file"
+                   id="formFileMultiple"
+                   name="selected-files"
+                   multiple />
+          </div>
+          <button type="submit"
+                  class="btn btn-primary mt-2 w-100"> upload </button>
+          <button type="reset"
+                  class="hide-element"></button>
+        </form>
+        <div id="upload-progressbar-container"
+             class="invisible">
+          <label id="progress-counter"></label>
+          <div id="progressbar-background">
+            <div id="progress"></div>
+          </div>
+          <div class="d-flex justify-content-center align-item-center">
+            <button class="btn btn-danger"
+                    id="cancel-btn">
+              <svg width="18"
+                   height="18"
+                   fill="currentColor"
+                   class="bi bi-x-circle"
+                   viewBox="0 0 16 16">
+                <path
+                      d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                      d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+              </svg>&MediumSpace;Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script/ajaxBuildTable.js"
+            defer="defer"></script>
+    <script src="script/getFilePreview.js"
+            defer="defer"></script>
+    <script src="script/downloadAndUploadFile.js"
+            defer="defer"></script>
+    <script src="script/otherFunctions.js"
+            defer="defer"></script>
+  </body>
+  <footer></footer>
+
+</html>
