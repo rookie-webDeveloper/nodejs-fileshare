@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 const
   path = require('path'),
   ansi = require('./api/ansi'),
@@ -6,8 +8,8 @@ const
   uploadRouts = require('./routs/upload'),
   previewRouts = require('./routs/preview'),
   downloadRouts = require('./routs/download'),
-  sendDirDetails = require('./routs/sendDirDetails');
-getIP4Address = require('./api/ipAddress').getIP4Address;
+  sendDirDetails = require('./routs/sendDirDetails'),
+  getIP4Address = require('./api/ipAddress').getIP4Address;
 
 function startServer(address) {
   const app = express();
