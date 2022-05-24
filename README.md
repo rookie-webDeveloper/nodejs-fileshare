@@ -12,9 +12,16 @@ Transfer Files from PC to another device using browser over LAN
 ```bash
 npm install
 ```
+3 After executing the above command type this command to install application globally
+```bash
+npm install -g
+```
 
 ## How to run
-1. Copy the path for the ```server.js```.
-2. Open command prompt in folder you want to share.
-3. In command prompt and type ```node [path to the server.js]```
-4. Scan the Qrcode which appear on command prompt or copy the address appeared on top of the Qrcode.
+1. Open command prompt in folder you want to share and type following command
+```bash
+start-share
+```
+3. Scan the Qrcode which appear on command prompt or copy the address appeared on top of the Qrcode.
+4. Try reducing size of font by ```ctrl + scroll``` to get full length of Qrcode in windows Terminal.
+5. if you are using windows command prompt or poweshell first reduce the font then restart application for ```Qrcode``` to appear.
