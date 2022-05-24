@@ -3,7 +3,8 @@ Transfer Files from PC to another device using browser over LAN
 
 ## Requirements 
 1. NodeJS must be installed.
-2. Internet connection for installing dependences for first time.
+2. if not installed download from [NodeJS website](https://nodejs.org/dist/v16.15.0/node-v16.15.0-x64.msi) 
+3. Internet connection for installing dependences for first time.
 
 ## Steps to install 
 1. Download the zip and extract the files.
