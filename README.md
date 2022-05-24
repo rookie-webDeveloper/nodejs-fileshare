@@ -22,5 +22,5 @@ npm install -g
 start-share
 ```
 3. Scan the Qrcode which appear on command prompt or copy the address appeared on top of the Qrcode.
-4. Try reducing size of font by ```ctrl + scroll``` to get full length of Qrcode in windows Terminal.
+4. Try reducing font size by ```ctrl + scroll↓``` to get full length of Qrcode in windows Terminal.
 5. if you are using windows command prompt or poweshell first reduce the font then restart application for ```Qrcode``` to appear.
