@@ -27,3 +27,7 @@ start-share
 ## Tips
 1. Try reducing font size by ```ctrl + scroll↓``` to get full length of Qrcode in windows Terminal.
 2. if you are using windows command prompt or poweshell first reduce the font then restart application for ```Qrcode``` to appear.
+
+## How to Uninstall
+1. Open windows terminal and type ```npm uninstall -g nodejs-fileshare``` and hit enter.
+2. Then delete the folder containg the files of the project.
