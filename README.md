@@ -1,8 +1,8 @@
 # nodejs-fileshare
-Transfer Files from PC to another device using browser over LAN
+Transfer Files from PC to another device using browser over LAN.
 
 ## Requirements 
-1. NodeJS must be installed. If not installed download from [NodeJS website](https://nodejs.org/dist/v16.15.0/node-v16.15.0-x64.msi) 
+1. NodeJS must be installed. If not installed download from [NodeJS website](https://nodejs.org/dist/v16.15.0/node-v16.15.0-x64.msi).
 3. Internet connection for installing dependences for first time.
 
 ## Steps to install 
@@ -11,13 +11,13 @@ Transfer Files from PC to another device using browser over LAN
 ```bash
 npm install
 ```
-3 After executing the above command type this command to install application globally
+3 After executing the above command type this command to install application globally.
 ```bash
 npm install -g
 ```
 
 ## How to run
-1. Open command prompt in folder you want to share and type following command
+1. Open command prompt in folder you want to share and type following command.
 ```bash
 start-share
 ```
